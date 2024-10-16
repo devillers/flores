@@ -48,7 +48,7 @@ export default function ContactPage() {
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
       <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
         <div>
-          <label className="block mb-1">Name</label>
+          <label className="block mb-1">Nom</label>
           <input
             type="text"
             name="name"
@@ -80,7 +80,7 @@ export default function ContactPage() {
           />
         </div>
         <button type="submit" className="bg-blue-600 text-white p-2">
-          Send Message
+          Envoyer
         </button>
       </form>
       {status && <p className="mt-4">{status}</p>}
