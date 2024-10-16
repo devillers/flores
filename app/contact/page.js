@@ -45,7 +45,7 @@ export default function ContactPage() {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+      <h1 className="text-4xl font-bold mb-4">Nous contacter</h1>
       <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
         <div>
           <label className="block mb-1">Nom</label>
