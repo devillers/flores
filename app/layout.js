@@ -21,20 +21,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>Next.js 14 App</title>
+        <title>Flores&Cie</title>
       </head>
       <body className="bg-gray-100 text-black">
         <header className="p-4 bg-blue-500 text-white">
           <nav>
             <ul className="container mx-auto flex space-x-4">
               <li>
-                <a href="/">Home</a>
+                <a href="/">accueil</a>
               </li>
               <li>
-                <a href="/prices">Prices</a>
+                <a href="/prices">prix</a>
               </li>
               <li>
-                <a href="/contact">Contact</a>
+                <a href="/contact">contact</a>
               </li>
             </ul>
           </nav>
