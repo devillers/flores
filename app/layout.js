@@ -19,38 +19,35 @@ export default function RootLayout({ children }) {
         <header>
           <div className="relative">
             {/* Image de fond */}
-            <Image
-              src="/image.jpg" // Assurez-vous que l'image existe
-              alt="Flores & Cie"
-              layout="responsive"
-              width={1920}
-              height={1080}
-              objectFit="cover"
-              className="w-full h-auto"
-            />
-            {/* Overlay pour améliorer la lisibilité */}
-            <div className="absolute inset-0 bg-black opacity-50"></div>
-            {/* Contenu du header */}
-            <nav className="absolute top-0 left-0 right-0 z-10 p-4 flex items-center justify-between max-w-screen-xl mx-auto">
-              <div className="flex items-center space-x-2">
-                <Link href="/">
-                  <Image
-                    src="/image.jpg"
-                    alt="Flores & Cie"
-                    width={50}
-                    height={50}
-                    className="object-contain"
-                  />
-                </Link>
-                <Link
-                  href="/"
-                  className="text-2xl font-bold text-white drop-shadow-lg"
-                >
-                  Flores & Cie
-                </Link>
-              </div>
-              <BurgerMenu />
-            </nav>
+            <div className="relative w-full h-screen md:h-[500px] ">
+              <Image
+                src="/living-rom.png" // Assurez-vous que l'image existe
+                alt="Flores & Cie"
+                fill
+                style={{ objectFit: 'cover' }}
+                className="w-full h-full"
+              />
+              {/* Overlay pour améliorer la lisibilité */}
+              <div className="absolute inset-0 bg-black opacity-50"></div>
+              {/* Contenu du header */}
+              <nav className="absolute top-0 left-0 right-0 z-10 p-4 flex items-center justify-between max-w-screen-xl mx-auto">
+                <div className="flex items-center space-x-2">
+                  <Link href="/">
+                    <Image
+                      src="/logo-small.svg"
+                      alt="Flores & Cie"
+                      width={50}
+                      height={50}
+                      className="object-contain p-1 "
+                    />
+                  </Link>
+                  <Link href="/" className="text-2xl  text-white pl-5">
+                    Flores & Cie
+                  </Link>
+                </div>
+                <BurgerMenu />
+              </nav>
+            </div>
           </div>
         </header>
         <main className="container mx-auto p-6">{children}</main>

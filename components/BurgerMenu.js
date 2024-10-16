@@ -46,21 +46,28 @@ export default function BurgerMenu() {
           <Link
             href="/"
             onClick={toggleMenu}
-            className="text-2xl font-semibold text-white hover:underline"
+            className="text-2xl font-semibold text-white hover:"
           >
             Accueil
           </Link>
           <Link
-            href="/prices"
+            href="/prestations"
             onClick={toggleMenu}
-            className="text-2xl font-semibold text-white hover:underline"
+            className="text-2xl font-semibold text-white hover:"
           >
-            Prix
+            Prestations
+          </Link>
+          <Link
+            href="/a-propos"
+            onClick={toggleMenu}
+            className="text-2xl font-semibold text-white hover:"
+          >
+            Prestations
           </Link>
           <Link
             href="/contact"
             onClick={toggleMenu}
-            className="text-2xl font-semibold text-white hover:underline"
+            className="text-2xl font-semibold text-white hover:"
           >
             Contact
           </Link>
@@ -69,13 +76,16 @@ export default function BurgerMenu() {
 
       {/* Menu pour écrans moyens et plus grands */}
       <div className="hidden md:flex md:items-center md:space-x-6">
-        <Link href="/" className="text-white hover:underline">
+        <Link href="/" className="text-white hover:">
           Accueil
         </Link>
-        <Link href="/prices" className="text-white hover:underline">
-          Prix
+        <Link href="/prestations" className="text-white hover:">
+          Prestations
         </Link>
-        <Link href="/contact" className="text-white hover:underline">
+        <Link href="/a-propos" className="text-white hover:">
+          A propos
+        </Link>
+        <Link href="/contact" className="text-white hover:">
           Contact
         </Link>
       </div>

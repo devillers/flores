@@ -45,7 +45,16 @@ export default function ContactPage() {
 
   return (
     <div>
-      <p></p>
+      <p>
+        Vous avez des questions ou souhaitez un devis personnalisé ? Notre
+        équipe est à votre disposition pour répondre à toutes vos demandes et
+        vous proposer des solutions sur mesure adaptées à vos besoins. Que ce
+        soit pour des renseignements sur nos services, un devis gratuit, ou des
+        conseils personnalisés, n’hésitez pas à nous écrire en remplissant le
+        formulaire de contact. Nous vous répondrons dans les plus brefs délais !
+        Contactez-nous dès maintenant et bénéficiez d’une propreté irréprochable
+        pour vos locaux !
+      </p>
       <h1 className="text-4xl font-bold mb-4">Nous contacter</h1>
       <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
         <div>
