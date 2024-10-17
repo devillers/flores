@@ -1,16 +1,17 @@
 // app/layout.js
-import './globals.css'; // Import global styles
+import './globals.css'; // Importer les styles globaux
 import localFont from 'next/font/local';
 import BurgerMenu from '../components/BurgerMenu';
 import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
+import Script from 'next/script'; // Importer le composant Script
 
-// Import the font from the '/app/fonts/' directory
+// Importer la police depuis le répertoire '/app/fonts/'
 const didactGothic = localFont({
-  src: './fonts/DidactGothic-Regular.ttf', // Relative path to the font file
-  display: 'swap', // Optional: Control font display behavior
-  variable: '--font-didact-gothic', // Define a CSS variable for the font
+  src: './fonts/DidactGothic-Regular.ttf', // Chemin relatif vers le fichier de police
+  display: 'swap', // Optionnel : Contrôler le comportement d'affichage de la police
+  variable: '--font-didact-gothic', // Définir une variable CSS pour la police
 });
 
 export const metadata = {
@@ -23,6 +24,19 @@ export default function RootLayout({ children }) {
     <html lang="fr" className={didactGothic.variable}>
       <head>
         <title>Flores & Cie</title>
+        {/* Balise globale du site (gtag.js) - Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </head>
       <body className="bg-white text-slate-900">
         <header>
@@ -36,8 +50,6 @@ export default function RootLayout({ children }) {
                 style={{ objectFit: 'cover' }}
                 className="w-full h-full"
               />
-              {/* Overlay pour améliorer la lisibilité */}
-
               {/* Contenu du header */}
               <nav className="absolute top-0 left-0 right-0 z-10 p-4 flex items-center justify-between bg-slate-900 opacity-75">
                 <div className="flex items-center space-x-2">
