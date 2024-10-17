@@ -1,6 +1,6 @@
 export default function HomePage() {
   return (
-    <div>
+    <div className="grid grid-cols-2 gap-4">
       <h1 className="text-4xl font-bold mb-4">Bienvenue chez Flores&Cie</h1>
       <p>
         Depuis trois ans, Flores & Cie s'affirme comme un acteur clé dans le

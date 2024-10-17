@@ -1,8 +1,17 @@
 // app/layout.js
-import './globals.css';
+import './globals.css'; // Import global styles
+import localFont from 'next/font/local';
 import BurgerMenu from '../components/BurgerMenu';
 import Link from 'next/link';
 import Image from 'next/image';
+import Footer from '../components/Footer';
+
+// Import the font from the '/app/fonts/' directory
+const didactGothic = localFont({
+  src: './fonts/DidactGothic-Regular.ttf', // Relative path to the font file
+  display: 'swap', // Optional: Control font display behavior
+  variable: '--font-didact-gothic', // Define a CSS variable for the font
+});
 
 export const metadata = {
   title: 'Flores & cie',
@@ -11,11 +20,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className={didactGothic.variable}>
       <head>
         <title>Flores & Cie</title>
       </head>
-      <body className="bg-gray-100 text-black">
+      <body className="bg-white text-slate-900">
         <header>
           <div className="relative">
             {/* Image de fond */}
@@ -28,9 +37,9 @@ export default function RootLayout({ children }) {
                 className="w-full h-full"
               />
               {/* Overlay pour améliorer la lisibilité */}
-              <div className="absolute inset-0 bg-black opacity-50"></div>
+
               {/* Contenu du header */}
-              <nav className="absolute top-0 left-0 right-0 z-10 p-4 flex items-center justify-between max-w-screen-xl mx-auto">
+              <nav className="absolute top-0 left-0 right-0 z-10 p-4 flex items-center justify-between bg-slate-900 opacity-75">
                 <div className="flex items-center space-x-2">
                   <Link href="/">
                     <Image
@@ -51,6 +60,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         <main className="container mx-auto p-6">{children}</main>
+        <Footer />
       </body>
     </html>
   );

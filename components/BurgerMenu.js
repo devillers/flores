@@ -16,7 +16,7 @@ export default function BurgerMenu() {
       {/* Bouton du menu burger */}
       <button
         onClick={toggleMenu}
-        className="relative z-50 flex h-8 w-8 flex-col items-center justify-between md:hidden"
+        className="relative z-50 flex h-7 w-7 flex-col items-center justify-evenly md:hidden"
         aria-label="Toggle menu"
       >
         <span
