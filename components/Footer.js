@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white py-8 mt-10 ">
+    <footer className="bg-slate-900 text-white  mt-10 pt-10 pb-20">
       <div className="container mx-auto px-4 opacity-50">
         <div className="flex justify-between items-center flex-wrap">
           {/* Footer Navigation */}
@@ -12,13 +12,13 @@ const Footer = () => {
               <Link href="/" className="">
                 Home
               </Link>
-              <Link href="/about" className="">
-                About Us
+              <Link href="/about" className="text-white">
+                A notre sujet
               </Link>
-              <Link href="/services" className="">
+              <Link href="/services" className="text-white">
                 Services
               </Link>
-              <Link href="/contact" className="">
+              <Link href="/contact" className="text-white">
                 Contact
               </Link>
             </nav>

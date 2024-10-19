@@ -2,7 +2,7 @@ export default function PricesPage() {
   return (
     <div>
       <h1 className="text-4xl font-bold mb-4"> A propos</h1>
-      <p>
+      <p className="mt-5 text-justify">
         {' '}
         L'entreprise a vu le jour dans la vallée de Chamonix en 2021, sous le
         nom initial de CannelleChx. Dès ses débuts, elle s'est distinguée par
@@ -13,7 +13,7 @@ export default function PricesPage() {
         biens immobiliers locatifs.
       </p>
 
-      <p>
+      <p className="mt-5 text-justify">
         {' '}
         En peu de temps, l'entreprise a élargi son offre et a évolué pour
         devenir Flores & Cie, consolidant sa réputation en tant qu'acteur clé
@@ -22,8 +22,8 @@ export default function PricesPage() {
         valorisation de propriétés, tout en élargissant son secteur d'activité à
         l'ensemble du domaine du Mont-Blanc.
       </p>
-      <h2> Nos Equipes</h2>
-      <p>
+      <h2 className="mt-5"> Nos Equipes</h2>
+      <p className="mt-5 text-justify">
         Chez Flores & Cie, nous nous entourons de collaborateurs de qualité en
         qui vous pouvez avoir confiance. Nos équipes, ponctuelles et bien
         organisées, sont toutes véhiculées, garantissant ainsi une flexibilité
@@ -32,19 +32,19 @@ export default function PricesPage() {
         grande importance à la discrétion et au respect de votre espace,
         assurant un service irréprochable.
       </p>
-      <p>
+      <p className="mt-5 text-justify">
         Avec Flores & Cie, vous pouvez être assuré de la compétence et du
         professionnalisme de nos équipes.
       </p>
-      <h2> Pourquoi nous choisir ?</h2>
-      <p>
+      <h2 className="mt-5"> Pourquoi nous choisir ?</h2>
+      <p className="mt-5 text-justify">
         Choisir Flores & Cie, c'est opter pour un partenaire qui croit
         profondément en la valeur du travail, en l'humain et en l'honnêteté.
         Nous nous engageons à offrir un service de qualité, basé sur la
         confiance et la transparence. Notre équipe se consacre à l'entretien de
         vos biens avec soin et professionnalisme.
       </p>
-      <p>
+      <p className="mt-5 text-justify">
         Nous valorisons les relations humaines et nous nous efforçons de créer
         une atmosphère chaleureuse et respectueuse dans toutes nos interactions.
       </p>
