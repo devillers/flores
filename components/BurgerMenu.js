@@ -21,7 +21,7 @@ export default function BurgerMenu() {
       >
         <span
           className={`h-0.5 w-full bg-white transform transition duration-300 ease-in-out ${
-            isOpen ? 'translate-y-3 rotate-45' : ''
+            isOpen ? 'translate-y-2 rotate-45' : ''
           }`}
         />
         <span
@@ -31,7 +31,7 @@ export default function BurgerMenu() {
         />
         <span
           className={`h-0.5 w-full bg-white transform transition duration-300 ease-in-out ${
-            isOpen ? '-translate-y-3 -rotate-45' : ''
+            isOpen ? '-translate-y-2 -rotate-45' : ''
           }`}
         />
       </button>
@@ -42,7 +42,10 @@ export default function BurgerMenu() {
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <div className="flex h-full flex-col items-center justify-center space-y-8">
+        <div
+          className="flex h-full flex-col items-center justify-center space-y-6
+        "
+        >
           <Link
             href="/"
             onClick={toggleMenu}
@@ -51,21 +54,28 @@ export default function BurgerMenu() {
             Accueil
           </Link>
           <Link
-            href="/prestations"
+            href="#prestations"
             onClick={toggleMenu}
             className="text-2xl font-semibold text-white hover:"
           >
             Prestations
           </Link>
           <Link
-            href="/a-propos"
+            href="#about"
             onClick={toggleMenu}
             className="text-2xl font-semibold text-white hover:"
           >
-            Prestations
+            about
           </Link>
           <Link
-            href="/contact"
+            href="#tarifs"
+            onClick={toggleMenu}
+            className="text-2xl font-semibold text-white hover:"
+          >
+            tarifs
+          </Link>
+          <Link
+            href="#contact"
             onClick={toggleMenu}
             className="text-2xl font-semibold text-white hover:"
           >
@@ -79,13 +89,16 @@ export default function BurgerMenu() {
         <Link href="/" className="text-white hover:">
           Accueil
         </Link>
-        <Link href="/prestations" className="text-white hover:">
+        <Link href="#prestations" className="text-white hover:">
           Prestations
         </Link>
-        <Link href="/a-propos" className="text-white hover:">
+        <Link href="#about" className="text-white hover:">
           A propos
         </Link>
-        <Link href="/contact" className="text-white hover:">
+        <Link href="#tarifs" className="text-white hover:">
+          Tarifs
+        </Link>
+        <Link href="#contact" className="text-white hover:">
           Contact
         </Link>
       </div>

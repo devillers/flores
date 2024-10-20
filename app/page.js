@@ -1,17 +1,25 @@
 import Header from '../components/Header';
-import WinterGetaway from '../components/WinterGetAway';
-import Stay from '../components/Stay';
-import Adventure from '../components/Adventure';
+import Prestations from '../components/Prestations';
+import About from '../components/About';
+import Tarifs from '../components/Tarifs';
 import Contact from '../components/Contact';
 
 function App() {
   return (
     <div>
       <Header />
-      <WinterGetaway />
-      <Stay />
-      <Adventure />
-      <Contact />
+      <section id="prestations">
+        <Prestations />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="tarifs">
+        <Tarifs />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }

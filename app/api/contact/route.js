@@ -24,7 +24,7 @@ export async function POST(req) {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER,
-      subject: `nouveau message de ouf ${name}`,
+      subject: `  ${name} sollicite votre attention, merci de ne pas l'ignorer `,
       html: `
         <p><strong>Nom:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>

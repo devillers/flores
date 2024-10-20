@@ -1,4 +1,4 @@
-const WinterGetaway = () => {
+const Prestations = () => {
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-6 text-gray-800">
@@ -19,4 +19,4 @@ const WinterGetaway = () => {
   );
 };
 
-export default WinterGetaway;
+export default Prestations;

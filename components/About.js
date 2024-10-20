@@ -1,4 +1,4 @@
-const Stay = () => {
+const About = () => {
   return (
     <section className="py-16 bg-gray-100">
       <div className="container mx-auto px-6 text-gray-800">
@@ -15,7 +15,10 @@ const Stay = () => {
               turpis augue egestas urna, non volutpat felis ligula sit amet
               neque. Aenean eleifend eget leo ac volutpat.
             </p>
-            <a href="#" className="text-blue-500 underline mt-4 inline-block">
+            <a
+              href="/about"
+              className="text-blue-500 underline mt-4 inline-block"
+            >
               voir plus
             </a>
           </div>
@@ -25,4 +28,4 @@ const Stay = () => {
   );
 };
 
-export default Stay;
+export default About;

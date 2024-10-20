@@ -39,9 +39,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className="bg-white text-slate-900">
-        <header>
-          <div className="relative">{/* Image de fond */}</div>
-        </header>
+        <header></header>
         <main className="container mx-auto p-6">{children}</main>
         <Footer />
       </body>
