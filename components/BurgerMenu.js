@@ -65,14 +65,14 @@ export default function BurgerMenu() {
             onClick={toggleMenu}
             className="text-2xl font-semibold text-white hover:"
           >
-            about
+            A propos
           </Link>
           <Link
             href="#tarifs"
             onClick={toggleMenu}
             className="text-2xl font-semibold text-white hover:"
           >
-            tarifs
+            Tarifs
           </Link>
           <Link
             href="#contact"

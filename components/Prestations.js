@@ -10,6 +10,9 @@ const Prestations = () => {
               aliquam faucibus ullamcorper. Donec molestie ultricies justo vitae
               bibendum. Donec finibus tellus nisl, eu feugiat sapien lacinia ac.
             </p>
+            <a href="/" className="text-blue-500  mt-4 inline-block">
+              voir plus
+            </a>
           </div>
           <div className="bg-gray-200 h-64"></div>{' '}
           {/* Replace this with an image or slideshow */}

@@ -10,15 +10,19 @@ const Footer = () => {
           <div className="w-full sm:w-auto mb-6 sm:mb-0">
             <nav className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
               <Link href="/" className="">
-                Home
+                Accueil
               </Link>
-              <Link href="/about" className="text-white">
-                A notre sujet
+              <Link href="/#prestations" className="text-white">
+                Prestations
               </Link>
-              <Link href="/services" className="text-white">
-                Services
+              <Link href="/#about" className="text-white">
+                A propos
               </Link>
-              <Link href="/contact" className="text-white">
+
+              <Link href="/#tarifs" className="text-white">
+                Tarifs
+              </Link>
+              <Link href="/#contact" className="text-white">
                 Contact
               </Link>
             </nav>

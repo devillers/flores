@@ -15,10 +15,7 @@ const About = () => {
               turpis augue egestas urna, non volutpat felis ligula sit amet
               neque. Aenean eleifend eget leo ac volutpat.
             </p>
-            <a
-              href="/about"
-              className="text-blue-500 underline mt-4 inline-block"
-            >
+            <a href="/" className="text-blue-500  mt-4 inline-block">
               voir plus
             </a>
           </div>

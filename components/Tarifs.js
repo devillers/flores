@@ -14,6 +14,9 @@ const Adventure = () => {
               turpis augue egestas urna, non volutpat felis ligula sit amet
               neque. Aenean eleifend eget leo ac volutpat.
             </p>
+            <a href="/" className="text-blue-500  mt-4 inline-block">
+              voir plus
+            </a>
           </div>
           <div className="bg-gray-200 h-64"></div> {/* Replace with an image */}
         </div>
