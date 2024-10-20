@@ -51,7 +51,7 @@ const Contact = () => {
           {' '}
           Vous avez des questions ou souhaitez un devis personnalisé ?{' '}
         </h2>
-        <p className="">
+        <p className="text-lg leading-relaxed">
           {' '}
           Que ce soit pour des renseignements sur nos services, un devis
           gratuit, ou des conseils personnalisés, n’hésitez pas à nous écrire en
