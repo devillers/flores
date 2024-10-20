@@ -95,7 +95,7 @@ const Prestations = () => {
               onClick={toggleModal}
               className="mt-6 bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-600"
             >
-              Close
+              Fermer
             </button>
           </div>
         </div>
