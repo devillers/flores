@@ -1,9 +1,10 @@
 const About = () => {
   return (
-    <section className="py-16 bg-gray-100">
-      <div className="container mx-auto px-6 text-gray-800">
+    <section className="py-16 bg-gray-100 rounded-md">
+      <div className="container mx-auto px-6 text-gray-800 ">
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-gray-200 h-64"></div> {/* Replace with an image */}
+          <div className="bg-gray-200 h-64 "></div>{' '}
+          {/* Replace with an image */}
           <div>
             <h2 className="text-3xl font-bold mb-4">Pourquoi Flores & Cie</h2>
             <p className="text-lg leading-relaxed">

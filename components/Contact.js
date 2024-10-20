@@ -44,7 +44,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-900 text-white grid  md:grid-cols-2 justify-between">
+    <section className="py-16 bg-gray-900 text-white grid  md:grid-cols-2 justify-between rounded-md">
       <div className="container mx-auto px-6">
         <h1 className="text-3xl font-bold mb-4">Nous contacter</h1>
         <h2 className="text-justify mt-6 ">

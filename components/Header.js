@@ -4,7 +4,7 @@ import BurgerMenu from './BurgerMenu';
 
 const Header = () => {
   return (
-    <header className="relative h-screen bg-gray-900 text-white">
+    <header className="relative h-screen bg-gray-900 text-white rounded-md">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: 'url(/path/to/your-image.jpg)' }}
