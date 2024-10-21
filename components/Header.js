@@ -10,19 +10,19 @@ const Header = () => {
         style={{ backgroundImage: 'url(/house.png)' }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-gray-500/30">
-          <div className="relative flex items-center justify-center top-[200px] sm:absolute sm:bottom-20 sm:right-20 ">
+          {/* Adjusted logo position to be pinned at the bottom center */}
+          <div className="absolute inset-x-0 bottom-10 flex justify-center">
             <Image
               src="/flores-logo.svg" // Path to your logo SVG file
               alt="Flores & Cie Logo"
-              width={380} // Adjust as needed
-              height={380} // Adjust as needed
+              width={180} // Adjust size as needed
+              height={180} // Adjust size as needed
               className="object-contain"
             />
           </div>
         </div>
       </div>
       <nav className="absolute top-0 w-full flex justify-between items-center p-6 z-10">
-        {/* <div className="text-xl font-bold">LOGO</div> */}
         <div className="flex items-center space-x-2">
           <Link href="/">
             <Image
@@ -30,10 +30,10 @@ const Header = () => {
               alt="Flores & Cie"
               width={50}
               height={50}
-              className="object-contain p-1 "
+              className="object-contain p-1"
             />
           </Link>
-          <Link href="/" className="text-2xl  text-white pl-5">
+          <Link href="/" className="text-2xl text-white pl-5">
             Flores & Cie
           </Link>
         </div>
