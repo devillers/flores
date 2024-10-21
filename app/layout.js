@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className="bg-white text-slate-900 md:p-3">
+      <body className="bg-white text-slate-900 p-3">
         <Header />
         <main className=" mx-auto">{children}</main>
         <Footer />
