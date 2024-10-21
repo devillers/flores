@@ -1,29 +1,8 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import BurgerMenu from './BurgerMenu';
-import { useEffect, useState } from 'react';
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    // Check if it's mobile size
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 640);
-    };
-
-    // Add event listener
-    window.addEventListener('resize', checkMobile);
-
-    // Check on mount
-    checkMobile();
-
-    // Cleanup event listener
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
   return (
     <header className="relative h-screen bg-gray-900 text-white rounded-md">
       <div
@@ -31,14 +10,14 @@ const Header = () => {
         style={{ backgroundImage: 'url(/house.png)' }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-gray-500/30">
-          {/* Adjust logo size based on mobile or desktop */}
-          <div className="absolute inset-x-0 bottom-10 flex justify-center md:justify-end md:right-56">
+          {/* Adjusted logo position to be pinned at the bottom center */}
+          <div className="absolute inset-x-0 bottom-10 flex justify-center">
             <Image
-              src="/flores-logo.svg"
+              src="/flores-logo.svg" // Path to your logo SVG file
               alt="Flores & Cie Logo"
-              width={isMobile ? 300 : 500} // Set width dynamically
-              height={isMobile ? 300 : 500} // Set height dynamically
-              className="object-contain"
+              width={300} // Default size for mobile
+              height={300} // Default size for mobile
+              className="object-contain sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]" // Adjust size for larger screens
             />
           </div>
         </div>
