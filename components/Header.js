@@ -15,9 +15,9 @@ const Header = () => {
             <Image
               src="/flores-logo.svg" // Path to your logo SVG file
               alt="Flores & Cie Logo"
-              width={300} // Mobile size
-              height={300} // Mobile size
-              className="object-contain sm:w-[600px] sm:h-[600px]" // 600px on larger screens
+              width={300} // Default size for mobile
+              height={300} // Default size for mobile
+              className="object-contain sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]" // Adjust size for larger screens
             />
           </div>
         </div>
