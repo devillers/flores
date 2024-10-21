@@ -68,13 +68,13 @@ export default function BurgerMenu() {
           >
             Prestations
           </Link>
-          <Link
+          {/* <Link
             href="#tarifs"
             onClick={toggleMenu}
             className="text-2xl font-semibold text-white hover:"
           >
             Tarifs
-          </Link>
+          </Link> */}
           <Link
             href="#contact"
             onClick={toggleMenu}
@@ -97,9 +97,9 @@ export default function BurgerMenu() {
         <Link href="#prestations" className="text-white hover:">
           Prestations
         </Link>
-        <Link href="#tarifs" className="text-white hover:">
+        {/* <Link href="#tarifs" className="text-white hover:">
           Tarifs
-        </Link>
+        </Link> */}
         <Link href="#contact" className="text-white hover:">
           Contact
         </Link>

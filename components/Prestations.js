@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useState } from 'react';
 
 const Prestations = () => {
@@ -12,15 +12,14 @@ const Prestations = () => {
   };
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16 ">
       <div className="container mx-auto px-6 text-gray-800">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-3xl font-bold mb-4">Prestations</h2>
             <p className="text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              aliquam faucibus ullamcorper. Donec molestie ultricies justo vitae
-              bibendum. Donec finibus tellus nisl, eu feugiat sapien lacinia ac.
+              Nous offrons une gamme complète de services de nettoyage adaptés à
+              vos besoins
             </p>
             <a
               href="#"
@@ -30,10 +29,19 @@ const Prestations = () => {
               voir plus
             </a>
           </div>
-          <div className="bg-gray-200 h-64"></div>
+          <div className="relative bg-gray-200 h-64">
+            <Image
+              src="/bedroom.png" // Replace with the path to your image
+              alt="chambre chalet moderne"
+              layout="fill" // Ensures the image fills the div
+              objectFit="cover" // Ensures the image covers the entire area without distortion
+              className="rounded-md" // Optional: add Tailwind classes for styling (e.g., rounded corners)
+            />
+          </div>
         </div>
       </div>
 
+      {/* Modal Popup */}
       {/* Modal Popup */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">

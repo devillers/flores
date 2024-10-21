@@ -47,16 +47,21 @@ const Contact = () => {
     <section className="py-16 bg-gray-900 text-white grid  md:grid-cols-2 justify-between rounded-md">
       <div className="container mx-auto px-6">
         <h1 className="text-3xl font-bold mb-4">Nous contacter</h1>
-        <h2 className="text-justify mt-6 ">
+        <h2 className="text-2xl mt-6 ">
           {' '}
           Vous avez des questions ou souhaitez un devis personnalisé ?{' '}
         </h2>
-        <p className="text-lg leading-relaxed">
-          {' '}
-          Que ce soit pour des renseignements sur nos services, un devis
-          gratuit, ou des conseils personnalisés, n’hésitez pas à nous écrire en
-          remplissant le formulaire de contact. Nous vous répondrons dans les
-          plus brefs délais !
+        <p className=" leading-loose text-justify mt-6">
+          Chez Flores & Cie, nous faisons preuve de transparence sur nos tarifs
+          et proposons des forfaits basés sur les prestations offertes par vos
+          biens immobiliers. Nous croyons en une communication claire et
+          honnête, afin que vous sachiez exactement ce que vous payez et ce que
+          vous recevrez en retour
+        </p>
+        <p className=" leading-loose text-justify mt-6">
+          Notre objectif est de vous offrir des solutions personnalisées qui
+          répondent à vos attentes en toute transparence. N'hésitez pas à
+          demander un devis gratuit pour évaluer vos besoins.
         </p>
       </div>
       <form onSubmit={handleSubmit} className="space-y-4 p-6 text-white">

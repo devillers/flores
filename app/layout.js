@@ -1,9 +1,7 @@
 // app/layout.js
 import './globals.css'; // Importer les styles globaux
 import localFont from 'next/font/local';
-import BurgerMenu from '../components/BurgerMenu';
-import Link from 'next/link';
-import Image from 'next/image';
+
 import Footer from '../components/Footer';
 import Script from 'next/script'; // Importer le composant Script
 import Header from '@/components/Header';
@@ -39,7 +37,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className="bg-white text-slate-900">
+      <body className="bg-white text-slate-900 md:p-3">
         <Header />
         <main className=" mx-auto">{children}</main>
         <Footer />
