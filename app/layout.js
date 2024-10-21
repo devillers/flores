@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Footer from '../components/Footer';
 import Script from 'next/script'; // Importer le composant Script
+import Header from '@/components/Header';
 
 // Importer la police depuis le répertoire '/app/fonts/'
 const didactGothic = localFont({
@@ -39,7 +40,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className="bg-white text-slate-900">
-        <header></header>
+        <Header />
         <main className=" mx-auto">{children}</main>
         <Footer />
       </body>
