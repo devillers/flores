@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-white text-slate-900">
         <header></header>
-        <main className=" mx-auto p-6">{children}</main>
+        <main className=" mx-auto p-2">{children}</main>
         <Footer />
       </body>
     </html>

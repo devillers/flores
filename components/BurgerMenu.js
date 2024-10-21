@@ -53,19 +53,20 @@ export default function BurgerMenu() {
           >
             Accueil
           </Link>
-          <Link
-            href="#prestations"
-            onClick={toggleMenu}
-            className="text-2xl font-semibold text-white hover:"
-          >
-            Prestations
-          </Link>
+
           <Link
             href="#about"
             onClick={toggleMenu}
             className="text-2xl font-semibold text-white hover:"
           >
             A propos
+          </Link>
+          <Link
+            href="#prestations"
+            onClick={toggleMenu}
+            className="text-2xl font-semibold text-white hover:"
+          >
+            Prestations
           </Link>
           <Link
             href="#tarifs"
@@ -89,11 +90,12 @@ export default function BurgerMenu() {
         <Link href="/" className="text-white hover:">
           Accueil
         </Link>
-        <Link href="#prestations" className="text-white hover:">
-          Prestations
-        </Link>
+
         <Link href="#about" className="text-white hover:">
           A propos
+        </Link>
+        <Link href="#prestations" className="text-white hover:">
+          Prestations
         </Link>
         <Link href="#tarifs" className="text-white hover:">
           Tarifs

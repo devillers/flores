@@ -7,12 +7,17 @@ const Header = () => {
     <header className="relative h-screen bg-gray-900 text-white rounded-md">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/path/to/your-image.jpg)' }}
+        style={{ backgroundImage: 'url(/house.png)' }}
       >
-        <div className="absolute inset-0 bg-red-300 bg-opacity-30">
-          <div className="absolute bottom-20 left-10 ">
-            <h1 className="text-5xl font-bold">FLores & Cie</h1>
-            <p className="mt-1 text-lg max-w-lg">Le ménage avec un grand M</p>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-gray-500/30">
+          <div className="relative flex items-center justify-center top-[500px] md:absolute md:bottom-20 md:right-20 ">
+            <Image
+              src="/flores-logo.svg" // Path to your logo SVG file
+              alt="Flores & Cie Logo"
+              width={380} // Adjust as needed
+              height={380} // Adjust as needed
+              className="object-contain"
+            />
           </div>
         </div>
       </div>
