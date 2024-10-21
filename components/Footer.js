@@ -12,11 +12,13 @@ const Footer = () => {
               <Link href="/" className="">
                 Accueil
               </Link>
-              <Link href="/#prestations" className="text-white">
-                Prestations
-              </Link>
+
               <Link href="/#about" className="text-white">
                 A propos
+              </Link>
+
+              <Link href="/#prestations" className="text-white">
+                Prestations
               </Link>
 
               <Link href="/#tarifs" className="text-white">
