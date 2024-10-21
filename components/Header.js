@@ -10,7 +10,7 @@ const Header = () => {
         style={{ backgroundImage: 'url(/house.png)' }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-gray-500/30">
-          <div className="relative flex items-center justify-center top-[500px] md:absolute md:bottom-20 md:right-20 ">
+          <div className="relative flex items-center justify-center top-[400px] md:absolute md:bottom-20 md:right-20 ">
             <Image
               src="/flores-logo.svg" // Path to your logo SVG file
               alt="Flores & Cie Logo"
