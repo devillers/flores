@@ -50,14 +50,14 @@ const Contact = () => {
         <h2 className="text-2xl mt-6 text-center">
           Vous avez des questions ou souhaitez un devis personnalisé ?
         </h2>
-        <p className="leading-loose text-justify mt-6 text-center">
+        <p className="leading-loose text-justify mt-6 ">
           Chez Flores & Cie, nous faisons preuve de transparence sur nos tarifs
           et proposons des forfaits basés sur les prestations offertes par vos
           biens immobiliers. Nous croyons en une communication claire et
           honnête, afin que vous sachiez exactement ce que vous payez et ce que
           vous recevrez en retour.
         </p>
-        <p className="leading-loose text-justify mt-6 text-center">
+        <p className="leading-loose text-justify mt-6 ">
           Notre objectif est de vous offrir des solutions personnalisées qui
           répondent à vos attentes en toute transparence. N'hésitez pas à
           demander un devis gratuit pour évaluer vos besoins.

@@ -4,20 +4,20 @@ import BurgerMenu from './BurgerMenu';
 
 const Header = () => {
   return (
-    <header className="relative h-screen bg-gray-900 text-white rounded-md">
+    <header className="relative h-screen bg-gray-900 text-white ">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/house.png)' }}
+        style={{ backgroundImage: 'url(/dreamchalet.png)' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-gray-500/30">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30">
           {/* Adjusted logo position to be pinned at the bottom center */}
-          <div className="absolute inset-x-0 bottom-10 flex justify-center">
+          <div className="absolute inset-x-0 bottom-0 flex justify-center ">
             <Image
-              src="/flores-logo.svg" // Path to your logo SVG file
+              src="/logo-large.svg" // Path to your logo SVG file
               alt="Flores & Cie Logo"
               width={300} // Default size for mobile
               height={300} // Default size for mobile
-              className="object-contain sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]" // Adjust size for larger screens
+              className="object-contain sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] " // Adjust size for larger screens
             />
           </div>
         </div>
