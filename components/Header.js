@@ -9,7 +9,8 @@ const Header = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: 'url(/dreamchalet.png)' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30">
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-white/70 to-white/30"> */}
+        <div>
           {/* Adjusted logo position to be pinned at the bottom center */}
           <div className="absolute inset-x-0 bottom-0 flex justify-center ">
             <Image

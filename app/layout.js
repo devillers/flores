@@ -2,7 +2,7 @@
 import './globals.css'; // Importer les styles globaux
 import localFont from 'next/font/local';
 
-import Footer from '../components/Footer';
+//import Footer from '../components/Footer';
 import Script from 'next/script'; // Importer le composant Script
 import Header from '@/components/Header';
 
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-slate-900">
         <Header />
         <main className=" mx-auto">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
