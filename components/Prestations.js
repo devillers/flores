@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Chevron icons for open/close
 
 const PrestationsAccordion = () => {
   const [activeIndex, setActiveIndex] = useState(null); // State to track active accordion section
@@ -10,12 +11,12 @@ const PrestationsAccordion = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  // Auto close the accordion after 60 seconds
+  // Auto close the accordion after 20 seconds
   useEffect(() => {
     if (activeIndex !== null) {
       const timer = setTimeout(() => {
-        setActiveIndex(null); // Close the accordion after 60 seconds
-      }, 20000); // 60000ms = 60 seconds
+        setActiveIndex(null); // Close the accordion after 20 seconds
+      }, 20000); // 20000ms = 20 seconds
 
       // Clear the timeout if the component unmounts or activeIndex changes
       return () => clearTimeout(timer);
@@ -25,7 +26,7 @@ const PrestationsAccordion = () => {
   return (
     <section className="bg-white p-6">
       <div className="container mx-auto text-gray-800">
-        <div className="">
+        <div>
           <div>
             <h2 className="text-3xl font-bold mb-4">Prestations</h2>
             <p className="text-lg leading-relaxed mb-8">
@@ -36,14 +37,21 @@ const PrestationsAccordion = () => {
 
           {/* Accordion starts here */}
           <div className="w-full">
-            <div className="space-y-1">
+            <div className="space-y-2">
               {/* First Accordion Item */}
-              <div className=" rounded-sm overflow-hidden transition-all duration-500">
+              <div className="rounded-md drop-shadow-md">
                 <button
                   onClick={() => toggleAccordion(0)}
-                  className="w-full text-left p-4 bg-gray-200 hover:bg-gray-300 transition-colors duration-300"
+                  className={`w-full flex justify-between items-center p-4 ${
+                    activeIndex === 0 ? 'bg-slate-900 text-white ' : 'bg-white'
+                  } transition-all duration-300`}
                 >
-                  <h3 className="text-xl font-semibold">Nettoyage</h3>
+                  <h3 className="text-lg">Nettoyage</h3>
+                  {activeIndex === 0 ? (
+                    <FaChevronUp className="text-gray-600" />
+                  ) : (
+                    <FaChevronDown className="text-pink-500" />
+                  )}
                 </button>
                 <div
                   ref={(el) => (contentRefs.current[0] = el)}
@@ -55,7 +63,7 @@ const PrestationsAccordion = () => {
                         : '0px',
                   }}
                 >
-                  <div className="p-4 bg-gray-100">
+                  <div className="p-4 bg-gray-100 border border-l-4 border-l-pink-600">
                     <ul className="list-disc pl-5 space-y-2">
                       <li>
                         Nettoyage de mise en service de logement en gestion
@@ -72,12 +80,19 @@ const PrestationsAccordion = () => {
               </div>
 
               {/* Second Accordion Item */}
-              <div className=" rounded-sm overflow-hidden transition-all duration-500">
+              <div className="rounded-md drop-shadow-md">
                 <button
                   onClick={() => toggleAccordion(1)}
-                  className="w-full text-left p-4 bg-gray-200 hover:bg-gray-300 transition-colors duration-300"
+                  className={`w-full flex justify-between items-center p-4 ${
+                    activeIndex === 1 ? 'bg-slate-900 text-white ' : 'bg-white'
+                  } transition-all duration-300`}
                 >
-                  <h3 className="text-xl font-semibold">Blanchisserie</h3>
+                  <h3 className="text-lg">Blanchisserie</h3>
+                  {activeIndex === 1 ? (
+                    <FaChevronUp className="text-gray-600" />
+                  ) : (
+                    <FaChevronDown className="text-pink-500" />
+                  )}
                 </button>
                 <div
                   ref={(el) => (contentRefs.current[1] = el)}
@@ -89,7 +104,7 @@ const PrestationsAccordion = () => {
                         : '0px',
                   }}
                 >
-                  <div className="p-4 bg-gray-100">
+                  <div className="p-4 bg-gray-100 border border-l-4 border-l-pink-600">
                     <ul className="list-disc pl-5 space-y-2">
                       <li>Nettoyage et repassage de linge de lit</li>
                       <li>Nettoyage de serviettes</li>
@@ -101,12 +116,19 @@ const PrestationsAccordion = () => {
               </div>
 
               {/* Third Accordion Item */}
-              <div className=" rounded-sm overflow-hidden transition-all duration-500">
+              <div className="rounded-md drop-shadow-md">
                 <button
                   onClick={() => toggleAccordion(2)}
-                  className="w-full text-left p-4 bg-gray-200 hover:bg-gray-300 transition-colors duration-300"
+                  className={`w-full flex justify-between items-center p-4 ${
+                    activeIndex === 2 ? 'bg-slate-900 text-white ' : 'bg-white'
+                  } transition-all duration-300`}
                 >
-                  <h3 className="text-xl font-semibold">Location de linge</h3>
+                  <h3 className="text-lg">Location de linge</h3>
+                  {activeIndex === 2 ? (
+                    <FaChevronUp className="text-gray-600" />
+                  ) : (
+                    <FaChevronDown className="text-pink-500" />
+                  )}
                 </button>
                 <div
                   ref={(el) => (contentRefs.current[2] = el)}
@@ -118,7 +140,7 @@ const PrestationsAccordion = () => {
                         : '0px',
                   }}
                 >
-                  <div className="p-4 bg-gray-100">
+                  <div className="p-4 bg-gray-100 border border-l-4 border-l-pink-600">
                     <h4 className="font-semibold">Location de kits</h4>
                     <ul className="list-disc pl-5 space-y-2">
                       <li>Draps de bains</li>
@@ -133,12 +155,19 @@ const PrestationsAccordion = () => {
               </div>
 
               {/* Fourth Accordion Item */}
-              <div className=" rounded-sm overflow-hidden transition-all duration-500">
+              <div className="rounded-md drop-shadow-md">
                 <button
                   onClick={() => toggleAccordion(3)}
-                  className="w-full text-left p-4 bg-gray-200 hover:bg-gray-300 transition-colors duration-300"
+                  className={`w-full flex justify-between items-center p-4 ${
+                    activeIndex === 3 ? 'bg-slate-900 text-white ' : 'bg-white'
+                  } transition-all duration-300`}
                 >
-                  <h3 className="text-xl font-semibold">Autres</h3>
+                  <h3 className="text-lg">Autres services</h3>
+                  {activeIndex === 3 ? (
+                    <FaChevronUp className="text-gray-600" />
+                  ) : (
+                    <FaChevronDown className="text-pink-500" />
+                  )}
                 </button>
                 <div
                   ref={(el) => (contentRefs.current[3] = el)}
@@ -150,7 +179,7 @@ const PrestationsAccordion = () => {
                         : '0px',
                   }}
                 >
-                  <div className="p-4 bg-gray-100">
+                  <div className="p-4 bg-gray-100 border border-l-4 border-l-pink-600">
                     <ul className="list-disc pl-5 space-y-2">
                       <li>Petits bricolage</li>
                       <li>Évacuation des encombrants</li>
