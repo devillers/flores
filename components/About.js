@@ -17,7 +17,7 @@ const About = () => {
     if (activeIndex !== null) {
       const timer = setTimeout(() => {
         setActiveIndex(null); // Close the accordion after 60 seconds
-      }, 20000); // 60000ms = 60 seconds
+      }, 10000); // 10000ms = 60 seconds
 
       // Clear the timeout if the component unmounts or activeIndex changes
       return () => clearTimeout(timer);
@@ -26,7 +26,7 @@ const About = () => {
 
   return (
     <section className="bg-white p-6">
-      <div className="container mx-auto  text-gray-800">
+      <div className="container mx-auto text-gray-800">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-gray-200 h-64"></div> {/* Replace with an image */}
           <div>
@@ -51,7 +51,7 @@ const About = () => {
         {/* Accordion starts here */}
         <div className="mt-4 space-y-2">
           {/* Accordion Item 1 */}
-          <div className=" rounded-md drop-shadow-md">
+          <div className="rounded-md drop-shadow-md">
             <button
               onClick={() => toggleAccordion(0)}
               className={`w-full flex justify-between items-center p-4 ${
@@ -102,7 +102,7 @@ const About = () => {
           </div>
 
           {/* Accordion Item 2 */}
-          <div className=" rounded-md drop-shadow-md">
+          <div className="rounded-md drop-shadow-md">
             <button
               onClick={() => toggleAccordion(1)}
               className={`w-full flex justify-between items-center p-4 ${
@@ -136,7 +136,7 @@ const About = () => {
                     sommes fiers de notre métier, et cela se reflète dans nos
                     tenues sobres et élégantes. Nous attachons une grande
                     importance à la discrétion et au respect de votre espace,
-                    assurant un service irréprochable
+                    assurant un service irréprochable.
                   </li>
                   <li className="text-justify">
                     Avec Flores & Cie, vous pouvez être assuré de la compétence
@@ -148,7 +148,7 @@ const About = () => {
           </div>
 
           {/* Accordion Item 3 */}
-          <div className=" rounded-md drop-shadow-md">
+          <div className="rounded-md drop-shadow-md">
             <button
               onClick={() => toggleAccordion(2)}
               className={`w-full flex justify-between items-center p-4 ${
@@ -168,7 +168,7 @@ const About = () => {
               style={{
                 height:
                   activeIndex === 2
-                    ? contentRefs.current[1]?.scrollHeight + 'px'
+                    ? contentRefs.current[2]?.scrollHeight + 'px'
                     : '0px',
               }}
             >

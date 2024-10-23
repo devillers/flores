@@ -16,7 +16,7 @@ const PrestationsAccordion = () => {
     if (activeIndex !== null) {
       const timer = setTimeout(() => {
         setActiveIndex(null); // Close the accordion after 20 seconds
-      }, 20000); // 20000ms = 20 seconds
+      }, 10000); // 20000ms = 20 seconds
 
       // Clear the timeout if the component unmounts or activeIndex changes
       return () => clearTimeout(timer);
