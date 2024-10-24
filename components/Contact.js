@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+//import Link from 'next/link';
 
 import { useState } from 'react';
 
@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-900 text-white grid md:grid-cols-2 justify-between ">
+    <section className="py-16 bg-gray-900 w-full  text-white grid md:grid-cols-2 justify-between  ">
       <div className="container mx-auto px-6 flex flex-col justify-center">
         <h1 className="text-3xl font-bold mb-4 ">Nous contacter</h1>
         <h2 className="text-2xl mt-6 ">
@@ -104,10 +104,10 @@ const Contact = () => {
         {status && <p className="p-6 text-pink-300">{status}</p>}
       </form>
 
-      <footer className="bg-gray-900 text-white  mt-[1px] pt-10 pb-20">
+      {/* <footer className=" bg-gray-900 text-white  mt-[1px] pt-10 pb-20">
         <div className="container mx-auto px-6 opacity-50">
           <div className="flex justify-between items-center flex-wrap">
-            {/* Footer Navigation */}
+          
             <div className="w-full sm:w-auto mb-6 sm:mb-0">
               <nav className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
                 <Link href="/" className="">
@@ -124,14 +124,14 @@ const Contact = () => {
 
                 {/* <Link href="/#tarifs" className="text-white">
                 Tarifs
-              </Link> */}
+              </Link> *
                 <Link href="/#contact" className="text-white">
                   Contact
                 </Link>
               </nav>
             </div>
 
-            {/* Social Media Links */}
+         
             <div className="w-full sm:w-auto flex space-x-4">
               <a
                 href="https://facebook.com"
@@ -158,7 +158,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </section>
   );
 };
