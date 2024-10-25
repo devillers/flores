@@ -7,7 +7,7 @@ const Header = () => {
     <header className="relative h-screen bg-gray-900 text-white ">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/dreamchalet.png)' }}
+        style={{ backgroundImage: 'url(/flores-chalet2.webp)' }}
       >
         {/* <div className="absolute inset-0 bg-gradient-to-t from-white/70 to-white/30"> */}
         <div>

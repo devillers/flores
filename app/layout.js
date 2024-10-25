@@ -41,7 +41,10 @@ export default function RootLayout({ children }) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <title>Flores & Cie</title>
+        <title>
+          Service de Ménage Airbnb | Saint Gervais les Bains | chamonix |
+          Nettoyage Professionnel
+        </title>
         {/* Balise globale du site (gtag.js) - Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
