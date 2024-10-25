@@ -5,9 +5,9 @@ import Contact from '../components/Contact';
 function App() {
   return (
     <div>
-      <section id="about">
+      {/* <section id="about">
         <About />
-      </section>
+      </section> */}
       <section id="prestations">
         <Prestations />
       </section>

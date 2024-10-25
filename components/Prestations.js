@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Chevron icons for open/close
 
@@ -27,16 +28,27 @@ const PrestationsAccordion = () => {
     <section className="bg-white p-6">
       <div className="container mx-auto text-gray-800">
         <div>
-          <div>
-            <h2 className="text-3xl font-bold mb-4">Prestations</h2>
+          {/* <div>
+            <h2 className="text-5xl font-bold mb-4">Prestations</h2>
             <p className="text-lg leading-relaxed mb-8">
               Nous offrons une gamme complète de services de nettoyage adaptés à
               vos besoins.
             </p>
+          </div> */}
+
+          <div className="flex flex-row items-center">
+            <Image
+              src="/airbnb.svg"
+              alt="Flores & Cie"
+              width={150}
+              height={150}
+              className="object-contain p-1"
+            />
+            <h2 className="text-4xl font-bold mb-4">Location courte durée</h2>
           </div>
 
           {/* Accordion starts here */}
-          <div className="w-full">
+          <div className="w-full mt-6 mb-6">
             <div className="space-y-2">
               {/* First Accordion Item */}
               <div className="rounded-md drop-shadow-md">
@@ -154,7 +166,7 @@ const PrestationsAccordion = () => {
                 </div>
               </div>
 
-              {/* Fourth Accordion Item */}
+              {/* fourth Accordion Item */}
               <div className="rounded-md drop-shadow-md">
                 <button
                   onClick={() => toggleAccordion(3)}
@@ -184,6 +196,41 @@ const PrestationsAccordion = () => {
                       <li>Petits bricolage</li>
                       <li>Évacuation des encombrants</li>
                       <li>Livraison/installation de mobiliers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {/* fifth Accordion Item */}
+              <div className="rounded-md drop-shadow-md">
+                <button
+                  onClick={() => toggleAccordion(4)}
+                  className={`w-full flex justify-between items-center p-4 ${
+                    activeIndex === 4 ? 'bg-slate-900 text-white ' : 'bg-white'
+                  } transition-all duration-300`}
+                >
+                  <h3 className="text-lg">Service de conciergerie </h3>
+                  {activeIndex === 4 ? (
+                    <FaChevronUp className="text-gray-600" />
+                  ) : (
+                    <FaChevronDown className="text-pink-500" />
+                  )}
+                </button>
+                <div
+                  ref={(el) => (contentRefs.current[4] = el)}
+                  className="transition-all duration-500 ease-in-out overflow-hidden"
+                  style={{
+                    height:
+                      activeIndex === 4
+                        ? contentRefs.current[4]?.scrollHeight + 'px'
+                        : '0px',
+                  }}
+                >
+                  <div className="p-4 bg-gray-100 border border-l-4 border-l-pink-600">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Accueil de vos client</li>
+                      <li>Livrausi des petits déjeuners</li>
+                      <li>Gestion du linge</li>
+                      <li>Gestion du ménage de fin de séjour</li>
                     </ul>
                   </div>
                 </div>

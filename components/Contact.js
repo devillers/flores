@@ -46,9 +46,9 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-900 w-full  text-white grid md:grid-cols-2 justify-between  ">
-      <div className="container mx-auto px-6 flex flex-col justify-center">
-        <h1 className="text-3xl font-bold mb-4 ">Nous contacter</h1>
+    <section className="py-16 bg-gray-900 w-full  text-white grid md:grid-cols-2 justify-between p-6 ">
+      <div className=" container max-w-[1200px] mx-auto flex flex-col justify-center p-6">
+        <h1 className="text-6xl font-bold mb-4 ">Nous contacter</h1>
         <h2 className="text-2xl mt-6 ">
           Vous avez des questions ou souhaitez un devis personnalisé ?
         </h2>
@@ -65,7 +65,7 @@ const Contact = () => {
           demander un devis gratuit pour évaluer vos besoins.
         </p>
       </div>
-      <form onSubmit={handleSubmit} className="space-y-4 p-6 text-white">
+      <form onSubmit={handleSubmit} className="mt-6 space-y-6  text-white p-6">
         <div>
           <label className="block mb-1">Nom</label>
           <input

@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'; // Chevron icons for open/close
 
@@ -30,9 +30,19 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-gray-200 h-64"></div> {/* Replace with an image */}
           <div>
-            <h2 className="text-2xl font-bold mb-4">
-              Experts en Nettoyage de biens immobiliers locatifs
-            </h2>
+            <div className="flex flex-row justify-between">
+              <Image
+                src="/airbnb.svg"
+                alt="Flores & Cie"
+                width={200}
+                height={200}
+                className="object-contain p-1"
+              />
+              <h2 className="text-6xl font-bold mb-4">
+                Ménage location courte durée
+              </h2>
+            </div>
+
             <p className="text-md leading-relaxed text-justify">
               Depuis trois ans, Flores & Cie s'affirme comme un acteur clé dans
               le nettoyage et l'entretien de chalets et appartements prestigieux
