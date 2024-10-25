@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className="bg-white text-slate-900">
-        <Header />
+        {/* <Header /> */}
         <main className=" container max-w-[1200px] mx-auto">{children}</main>
       </body>
     </html>
