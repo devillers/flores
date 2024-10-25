@@ -5,10 +5,15 @@ import BurgerMenu from './BurgerMenu';
 const Header = () => {
   return (
     <header className="relative h-screen bg-gray-900 text-white ">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/flores-chalet2.webp)' }}
-      >
+      <div className="relative w-full h-screen">
+        <Image
+          src="/flores-chalet2.webp"
+          alt="Dream Chalet Background"
+          layout="fill"
+          objectFit="cover"
+          quality={80} // Set quality for optimization, between 1 and 100
+          priority // Load image with priority if it's essential for the first view
+        />
         {/* <div className="absolute inset-0 bg-gradient-to-t from-white/70 to-white/30"> */}
         <div>
           {/* Adjusted logo position to be pinned at the bottom center */}
